@@ -1,3 +1,4 @@
+
 .site-content{  
     border: 5px solid red;
     width: 1440px;
@@ -8,17 +9,90 @@
     align-items: center;
 }
 
+/* Header styling */
+
 .header {
-    border: 5px solid red;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
     position: fixed;
     top: 30px;
+    height: 35px;
+    display:flex;
+
+    background: linear-gradient(to bottom, #808080 0, #707070 50%
+    , #5e5e5e 51%, #808080 100%);
 }
 
-.billboard {
-    border: 5px solid red;
+.apple-header-button-container{
+    width:103px;
 
+    border-right: 1px solid #5e5e5e;
+}
+
+.text-header-button-container{
+    width:103px;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #5e5e5e;
+}
+
+.header-search-bar-container{
+    border-left: 1px solid #808080;
+    width:135px;
+
+    position:relative;
+}
+
+.apple-header-button{
+    margin-left: 42px;
+    margin-top: 8px;
+
+    filter: invert(90%);
+}
+
+.text-header-button{
+    margin: auto;
+    margin-top: 8px;
+    text-align: center;
+    font:12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: #ededed;
+    text-shadow: 0px -1px #363636;
+}
+
+.header-search-bar{
+    width: 106px;
+    height: 18px;
+
+    border: 0.5px solid #363636;
+    border-radius: 12px;
+
+    background: linear-gradient(to bottom, #707070 0, #808080 50%
+    , #707070 51%, #808080 100%);
+
+    margin-top: 7px;
+    margin-left: 13px;
+}
+
+.search-icon{
+    vertical-align: middle;
+    width: 13px;
+    filter: invert(0);
+
+    position: absolute;
+
+    top: 10.9px;
+    left: 19px;
+}
+
+/* Billboard styling */
+
+.billboard {
     width: 1440px;
     height: 538px;
+
+    background-image: url("assets/your_verse_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
 
 .promos {
